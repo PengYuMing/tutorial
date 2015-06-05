@@ -1,19 +1,19 @@
 //
-//  HelloWorldTests.m
-//  HelloWorldTests
+//  LoopExTests.m
+//  LoopExTests
 //
-//  Created by 彭煜銘 on 2015/6/4.
+//  Created by 彭煜銘 on 2015/6/5.
 //  Copyright (c) 2015年 NickPeng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface HelloWorldTests : XCTestCase
+@interface LoopExTests : XCTestCase
 
 @end
 
-@implementation HelloWorldTests
+@implementation LoopExTests
 
 - (void)setUp {
     [super setUp];
