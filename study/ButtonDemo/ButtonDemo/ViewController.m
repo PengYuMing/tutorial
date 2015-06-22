@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -16,8 +17,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // target-action
+//    [self.button addTarget:self action:@selector(click:forEvent:)forControlEvents:UIControlEventTouchUpInside];
+    
 }
+- (IBAction)ClickforEvent:(id)sender forEvent:(UIEvent *)event {
+    UIButton *buttion = sender;
+    
+    UITouch *finger = [event.allTouches anyObject];
+    CGPoint touchPoint = [finger locationInView:self.view];
+    
+    buttion.center = touchPoint;
+}
+
+- (void)click:(id)sender forEvent:(UIEvent *)event{
+    
+    UIButton *buttion = sender;
+    
+    UITouch *finger = [event.allTouches anyObject];
+    CGPoint touchPoint = [finger locationInView:self.view];
+    
+    buttion.center = touchPoint;
+    
+//    UIAlertView *alertview = [[UIAlertView alloc]
+ //                             initWithTitle:@"Click" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//                              [alertview show];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

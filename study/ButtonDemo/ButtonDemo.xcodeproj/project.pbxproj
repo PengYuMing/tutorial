@@ -14,6 +14,7 @@
 		4DB6FA341B29E4AA00719CBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB6FA331B29E4AA00719CBC /* Images.xcassets */; };
 		4DB6FA371B29E4AA00719CBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB6FA351B29E4AA00719CBC /* LaunchScreen.xib */; };
 		4DB6FA431B29E4AA00719CBC /* ButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6FA421B29E4AA00719CBC /* ButtonDemoTests.m */; };
+		4DB6FA4D1B2AD2E900719CBC /* button-152243_1280.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB6FA4C1B2AD2E900719CBC /* button-152243_1280.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4DB6FA3C1B29E4AA00719CBC /* ButtonDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB6FA411B29E4AA00719CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DB6FA421B29E4AA00719CBC /* ButtonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonDemoTests.m; sourceTree = "<group>"; };
+		4DB6FA4C1B2AD2E900719CBC /* button-152243_1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-152243_1280.png"; path = "../../button-152243_1280.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 				4DB6FA241B29E4A900719CBC /* Products */,
 			);
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
 		};
 		4DB6FA241B29E4A900719CBC /* Products */ = {
 			isa = PBXGroup;
@@ -87,6 +91,7 @@
 				4DB6FA2E1B29E4AA00719CBC /* ViewController.m */,
 				4DB6FA301B29E4AA00719CBC /* Main.storyboard */,
 				4DB6FA331B29E4AA00719CBC /* Images.xcassets */,
+				4DB6FA4C1B2AD2E900719CBC /* button-152243_1280.png */,
 				4DB6FA351B29E4AA00719CBC /* LaunchScreen.xib */,
 				4DB6FA261B29E4A900719CBC /* Supporting Files */,
 			);
@@ -200,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DB6FA321B29E4AA00719CBC /* Main.storyboard in Resources */,
+				4DB6FA4D1B2AD2E900719CBC /* button-152243_1280.png in Resources */,
 				4DB6FA371B29E4AA00719CBC /* LaunchScreen.xib in Resources */,
 				4DB6FA341B29E4AA00719CBC /* Images.xcassets in Resources */,
 			);
@@ -347,9 +353,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ButtonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -357,9 +365,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ButtonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -416,6 +426,7 @@
 				4DB6FA481B29E4AA00719CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DB6FA491B29E4AA00719CBC /* Build configuration list for PBXNativeTarget "ButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +435,7 @@
 				4DB6FA4B1B29E4AA00719CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
