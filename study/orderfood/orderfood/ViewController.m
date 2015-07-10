@@ -43,6 +43,19 @@
     [buttonOrder setTitle:@"我要呷" forState:UIControlStateNormal];
     [buttonOrder addTarget:self action:@selector(clickOrder) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:buttonOrder];
+
+    NSString* text = [NSString stringWithFormat:@"建漢早餐店-漢堡早午餐\n7/13(一) 09:00 開始預訂\n7/13(一) 20:00 預訂截止\n7/14(二) 09:00 一樓櫃台領取"];
+    [[UIColor whiteColor] set];
+    UIFont* font = [UIFont systemFontOfSize:24];
+//    [text drawAtPoint:CGPointMake(50, 400) withAttributes: strAttribs];
+    
+/*    UIButton *buttonList = [[UIButton alloc]initWithFrame:CGRectMake(50, 400, 275, 200)];
+    buttonList.backgroundColor = [UIColor grayColor];
+    [buttonList setTitle:@"建漢早餐店-漢堡早午餐" forState:UIControlStateNormal];
+    [buttonList setValue:buttonList forKey:@"7/13(一) 09:00 開始預訂\n7/13(一) 20:00 預訂截止\n7/14(二) 09:00 一樓櫃台領取\n"];
+//    [buttonList addTarget:self action:@selector(clicklist) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:buttonList];
+*/
     
     
 }
