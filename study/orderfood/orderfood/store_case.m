@@ -9,7 +9,7 @@
 #import "store_case.h"
 
 @implementation store_case
-
+/* test
 @synthesize name = _name;
 @synthesize start = _start;
 @synthesize end = _end;
@@ -37,7 +37,7 @@
     [super dealloc];
     
 }
-
+*/
 - (NSString*)aisatu {
     return [NSString stringWithFormat:
             @"%@ %@ 開始預訂 %@ 預訂截止 %@ 1樓櫃台領取" "%d 元", _name, _start, _end, _arrivl, _price];
